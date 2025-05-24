@@ -7,8 +7,8 @@ services:
     ports:
       - "5672:5672"
   backend:
-    #command: >
-    #  sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    command: >
+     sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     build:
       context: .
       dockerfile: Dockerfile
