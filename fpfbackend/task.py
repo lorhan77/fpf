@@ -13,8 +13,7 @@ def processar_numeros(id):
 
         p.status = "Concluído"
 
-        sleep(3) # Simulate a long-running task
-
+        sleep(3) 
         p.save()
         
     except Processamento.DoesNotExist:
